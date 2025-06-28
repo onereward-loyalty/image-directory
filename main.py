@@ -171,7 +171,7 @@ if selected_folder != "+ Create New Folder" and selected_folder in data:
     if not entries:
         st.info("No images uploaded yet.")
     else:
-        images_per_row = 4
+        images_per_row = 3
         for i in range(0, len(entries), images_per_row):
             row_entries = entries[i:i + images_per_row]
             cols = st.columns(images_per_row)
