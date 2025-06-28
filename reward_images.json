@@ -1,0 +1,28 @@
+{
+    "Folder1": [
+        {
+            "filename": "img1.png",
+            "imgur_link": "https://i.imgur.com/abc123.png"
+        }
+    ],
+    "Folder2": [],
+    "meet": [
+        {
+            "filename": "boba tea rolly final.png",
+            "imgur_link": "https://i.imgur.com/SZ3dJi1.png"
+        },
+        {
+            "filename": "rolled Icecream rolly final.png",
+            "imgur_link": "https://i.imgur.com/cqpjago.png"
+        },
+        {
+            "filename": "falooda rolly final.png",
+            "imgur_link": "https://i.imgur.com/nBbhqTG.png"
+        },
+        {
+            "filename": "waffle final.png",
+            "imgur_link": "https://i.imgur.com/Q6pb9ab.png"
+        }
+    ],
+    "new": []
+}
