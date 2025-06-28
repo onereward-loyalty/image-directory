@@ -81,7 +81,7 @@
 #     columns = st.columns(3)
 #     for i, entry in enumerate(data[selected_folder]):
 #         with columns[i % 3]:
-#             st.image(entry["imgur_link"], use_column_width=True)
+#             st.image(entry["imgur_link"], use_container_width=True)
 #             st.code(entry["imgur_link"], language="markdown")
 #             st.markdown(clipboard_button(entry["imgur_link"]), unsafe_allow_html=True)
 
@@ -177,7 +177,7 @@ if selected_folder != "+ Create New Folder" and selected_folder in data:
             cols = st.columns(images_per_row)
             for col, entry in zip(cols, row_entries):
                 with col:
-                    st.image(entry["imgur_link"], use_column_width=True)
+                    st.image(entry["imgur_link"], use_container_width=True)
                     st.code(entry["imgur_link"], language="markdown")
                     # st.markdown(clipboard_button(entry["imgur_link"]), unsafe_allow_html=True)
 
