@@ -125,8 +125,8 @@ def clipboard_button(link):
     """
 
 # ----------------- App Layout -----------------
-st.set_page_config(page_title="🏆 Reward Image Directory", layout="wide")
-st.markdown("# 🏆 Reward Image Directory with Imgur")
+st.set_page_config(page_title="One Reward Image Directory", layout="wide")
+st.markdown("# One Reward Image Directory")
 st.markdown("Upload images, organize them by folders, and share Imgur links.")
 
 # Load and Save JSON
@@ -151,7 +151,7 @@ if selected_folder == "+ Create New Folder":
 # File upload
 if selected_folder != "+ Create New Folder":
     uploaded_file = st.sidebar.file_uploader("Upload Image", type=["jpg", "jpeg", "png"])
-    if uploaded_file and st.sidebar.button("Upload to Imgur"):
+    if uploaded_file and st.sidebar.button("Upload to Server"):
         img_bytes = uploaded_file.read()
         imgur_link = upload_to_imgur(img_bytes)
         if imgur_link:
@@ -160,7 +160,7 @@ if selected_folder != "+ Create New Folder":
                 "imgur_link": imgur_link
             })
             save_data(data)
-            st.success(f"Uploaded successfully.")
+            st.success(f"Uploaded successfully to One Reward Server.")
             st.rerun()
 
 # ----------------- Gallery -----------------
